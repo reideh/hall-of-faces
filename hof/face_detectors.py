@@ -4,7 +4,8 @@ from abc import ABCMeta, abstractmethod, abstractproperty
 
 import cv2
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disbale_v2_behavior()
 
 from hof.downloader import Downloader
 
